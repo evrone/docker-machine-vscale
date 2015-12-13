@@ -1,3 +1,6 @@
+# Support go1.5 vendoring (let us avoid messing with GOPATH or using godep)
+export GO15VENDOREXPERIMENT = 1
+
 default: build
 
 bin/docker-machine-driver-vscale: fetch

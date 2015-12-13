@@ -1,0 +1,11 @@
+language: go
+go:
+  - 1.5.1
+
+env:
+  global:
+    - GO15VENDOREXPERIMENT=1
+
+before_install:
+  - go get -d -v -u github.com/evrone/docker-machine-vscale
+script: go test ./...
