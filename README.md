@@ -1,5 +1,7 @@
 # Docker Machine Vscale Driver
 
+[![Vexor status](https://ci.vexor.io/projects/2c3724f0-4de6-4e28-9bdd-19fb71795812/status.svg)](https://ci.vexor.io/ui/projects/2c3724f0-4de6-4e28-9bdd-19fb71795812/builds)
+
 This is a plugin for [Docker Machine](https://docs.docker.com/machine/) allowing
 to create Doker hosts on [Vscale]( http://vscale.io ) cloud services.
 
