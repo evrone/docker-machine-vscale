@@ -19,7 +19,7 @@ After compile you can use driver for creating docker hosts.
 Get Vscale access token from [your profile](https://vscale.io/panel/settings/tokens/) then run:
 
 ```console
-$ docker-machine create -d vscale --vscale-access-token YOUR_VSCALE_ACCESS_TOKEN
+$ docker-machine create -d vscale --vscale-access-token YOUR_VSCALE_ACCESS_TOKEN machine_name
 ```
 
 You should see simple log of operations:
