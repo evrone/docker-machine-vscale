@@ -2,10 +2,8 @@ language: go
 go:
   - 1.5.1
 
-env:
-  global:
-    - GO15VENDOREXPERIMENT=1
-
 before_install:
-  - go get -d -v -u github.com/evrone/docker-machine-vscale
-script: go test ./...
+  - curl https://get.docker.com/builds/Linux/x86_64/docker-1.11.2.tgz | tar -zx
+  - mv docker/docker /usr/local/bin
+  - docker -H $DOCKER_URL build --rm -t docker-machine-vscale .
+script: docker -H $DOCKER_URL run --rm make test
